@@ -1,0 +1,67 @@
+/* by syavkei */
+/* https://github.com/syavkei/ */
+
+@media only screen and (max-width: 600px) {
+  header {
+    min-height: 50vh;
+    height: auto;
+  }
+  nav {
+    height: 50px;
+  }
+  .logo {
+    object-fit: cover;
+    width: 150%;
+    /* transform: scale(.9); */
+    object-position: left;
+  }
+  .menu {
+    margin-top: 15px;
+  }
+  #hiragana > img {
+    width: 50%;
+  }
+  #hiragana_table > img {
+    width: 80%;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .jumbotron div {
+    text-align: center;
+  }
+
+  article {
+    min-height: 50vh;
+  }
+
+  #table-large {
+    display: none;
+  }
+
+  #table-small {
+    display: block;
+  }
+
+  .img-huruf {
+    width: 65px;
+  }
+
+  #kursus {
+    flex-direction: column;
+  }
+
+  .card {
+    height: 300px;
+  }
+
+  .card-header > h2 {
+    font-size: 20px;
+  }
+
+  .card-body > ul > li {
+    font-size: 15px;
+  }
+}

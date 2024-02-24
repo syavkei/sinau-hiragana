@@ -1,0 +1,374 @@
+/* by syakei */
+/* https://github.com/syavkei/ */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/img/jumbotron.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.back-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: auto;
+  left: auto;
+  bottom: 10px;
+  right: 10px;
+}
+nav {
+  height: 100px;
+  display: flex;
+  box-shadow: 0 2px 12px #0683d3;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+nav > div {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.logo-container {
+  height: 100%;
+  padding: 5px;
+}
+
+.logo {
+  height: 90%;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(-2deg);
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-item {
+  list-style: none;
+  font-weight: 900;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-item.active {
+  background-color: #0683d3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #0683d3;
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.menu-item:hover .menu-link {
+  transform: scale(1.2);
+}
+
+.menu-item.active .menu-link {
+  color: #ffffff;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron > img {
+  width: 50%;
+}
+
+.jumbotron div {
+  display: flex;
+  flex-direction: column;
+}
+
+.jumbotron div h1 {
+  font-weight: 900;
+  color: #0683d3;
+}
+
+.jumbotron div p {
+  color: #333;
+}
+
+/* main {
+    display: flex;
+} */
+
+.content {
+  /* flex: 3; */
+  background-color: #d6f7ff;
+  text-align: center;
+  padding: 10px;
+}
+
+article {
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+}
+
+article > img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+article > p {
+  margin-bottom: 20px;
+}
+
+article > h2 {
+  margin-bottom: 20px;
+}
+
+article > p,
+article > ul > li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0683d3;
+}
+
+table {
+  /* width: 90%; */
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+table td {
+  padding: 5px;
+}
+
+table td > img {
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+table td > img:hover {
+  transform: scale(1.05);
+}
+
+table td > img:active {
+  transform: scale(1.3);
+  box-shadow: 0 0 2px 2px #67d9f6;
+}
+
+table td > span {
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #6f7c68;
+}
+
+#table-large {
+  /* display: block; */
+}
+
+#table-small {
+  display: none;
+}
+
+/* Kursus */
+#kursus {
+  display: flex;
+}
+
+.kursus-left {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  flex: 1;
+  height: 70%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  --bs-card-cap-padding-x: 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px 5px #67d9f6;
+  transform: translateY(-10px);
+}
+
+.card-header,
+.card-footer {
+  background-color: #0683d3;
+  color: #ffffff;
+  height: 20%;
+  position: relative;
+  text-align: center;
+}
+
+.card-header > h2,
+.card-footer > h2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.card-body {
+  padding-left: 0;
+}
+
+.card-body > ul {
+  padding-left: 0;
+}
+
+.card-body > ul > li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card:hover > .card-body > ul > li {
+  color: #0683d3;
+}
+
+.kursus-right {
+  flex: 1;
+}
+
+.kursus-right h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+aside {
+  /* flex: 1; */
+  /* background-color: #67d9f6; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside ul {
+  /* margin-top: 200px; */
+  list-style-position: inside;
+  list-style-type: none;
+  text-align: center;
+}
+
+aside > ul > li > a {
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.img-sensei {
+  width: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.img-sensei:hover {
+  opacity: 0.8;
+}
+
+/* Kursus End */
+
+/* Kontak */
+#kontak {
+  display: flex;
+}
+
+#kontak > div {
+  flex: 1;
+}
+/* Kontak End */
+
+footer {
+  background-color: #0683d3;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  color: #ffffff;
+}
+
+.footer-up {
+  display: flex;
+  height: 100%;
+}
+
+.footer-up > div {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+.footer-up1 {
+  align-items: center;
+}
+
+.footer-logo {
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer-up2 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-up3 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-up2 p a,
+.footer-up3 a {
+  color: #d6f7ff;
+}
